@@ -13,7 +13,7 @@ HEIGHT = 110
 # Configuración de la pantalla
 # --------------------------------------------------------------------------
 root = tk.Tk()
-root.title("Conversor de videos a MP3")
+root.title("Conversor Youtube - MP3")
 root.config(width=WIDTH, height=HEIGHT)
 root.resizable(False, False)
 
