@@ -15,4 +15,4 @@
 Para poder utilizar el conversor sin errores, los archivos de la carpeta ConversorMP3_vXX no deben almacenarse en carpetas diferentes, lo más recomendable es crear un acceso directo al ejecutable youtubeConverter.exe en el escritorio y ejecutar el programa desde ahí.
 
 ## Recomendaciones
-Meter la carpeta obtenida al final del paso 5 en el directorio donde se tengan todos los programas y posteriormente crear un acceso directo al ejecutable en el escritorio.
+Meter la carpeta obtenida (una vez hecho el paso 5) en el directorio donde se tengan todos los programas y posteriormente crear un acceso directo al ejecutable en el escritorio.
