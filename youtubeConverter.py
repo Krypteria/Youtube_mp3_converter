@@ -46,7 +46,7 @@ etiquetaEstado.place(x = 17, y = 70)
 
 # Input 
 # --------------------------------------------------------------------------
-imagenCambiarRuta = tk.PhotoImage(file = "D:\Biblioteca\Escritorio\Workspaces\Workspace Python\Tests\cambiarRuta.png") #cambiar
+imagenCambiarRuta = tk.PhotoImage(file = "icons\cambiarRuta.png") #cambiar
 RUTA = ""
 
 #Cuadro de texto
