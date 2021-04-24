@@ -58,19 +58,23 @@ estado = tk.StringVar()
 estadoContenedor = tk.Label(root, textvariable=estado,  font=fuente)
 estadoContenedor.place(x = 190, y = 70)
 
-#Botones
 def convertir():
     if(RUTA == ""):
         tk.messagebox.showinfo("Error", "Tienes que seleccionar una carpeta de destino")
     else:
-        estado.set("En curso")
-        root.update()
-        with youtube_dl.YoutubeDL(formato) as ydl:
-            os.chdir(RUTA)
-            ydl.download([entrada.get()])
-            entrada.delete(0, "end")
-            estado.set("Completada")
-
+        if "https://www.youtube.com/watch?" in entrada.get():
+            estado.set("En curso")
+            root.update()
+            with youtube_dl.YoutubeDL(formato) as ydl:
+                os.chdir(RUTA)
+                try:
+                    ydl.download([entrada.get()])
+                except:
+                    tk.messagebox.showinfo("Error", "Ha ocurrido un error en la conversión, el vídeo no se ha convertido a mp3")
+                entrada.delete(0, "end")
+                estado.set("Completada")
+        else:
+            tk.messagebox.showinfo("Error", "URL del video no válida")
 
 convertirBoton = ttk.Button(root, text="Convertir", command = convertir)
 convertirBoton.place(x=575, y=38)
@@ -96,7 +100,12 @@ root.bind("<Button-3>", mostrarMenu)
 
 # --------------------------------------------------------------------------
 
+#Para mantenerlo siempre en la ultima versión y evitar problemas 
+def updateYoutubeDLL():
+    os.system('cmd /c "pip install --upgrade youtube-dl')
+
 def main():
+    updateYoutubeDLL()
     root.mainloop()
 
 if __name__ == "__main__":
