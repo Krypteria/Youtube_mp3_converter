@@ -4,7 +4,7 @@
 
 ## Como descargarlo
 
-1- Descargar el conversor FFMPEG de https://drive.google.com/drive/folders/1xPFnpWALCGmLIngHwITsGrz2R0vvo8RB <br>
+1- Descargar el conversor FFMPEG de https://drive.google.com/drive/folders/1FOWGOQvaAPo6r_D7Y3UMWOEJA5t6zNQr?usp=sharing <br>
 2- Descomprimir el zip. <br>
 3- Añadir al PATH la ruta a la carpeta bin que se encuentra dentro de FFMPEG <br> (tecla windows -> editar variables del sistema -> variables de entorno -> PATH del usuario -> añadir la ruta). <br>
 4- Descargar el zip de la última versión de la carpeta ConversorMP3_releases. <br>
